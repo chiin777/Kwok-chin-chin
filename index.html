@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>韓文學習App - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
+      background: #ffffff;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(192, 132, 252, 0.15);
+      z-index: 1000;
+      padding: 18px 0;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #c084fc;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+    .nav-links a {
+      color: #4b2e5a;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #c084fc;
+    }
+
+    /* Hero */
+    header {
+      padding: 180px 0 140px;
+      text-align: center;
+      background: linear-gradient(to bottom, #fff5f0 0%, #ffffff 100%);
+    }
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 700;
+      color: #c084fc;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-size: 2rem;
+      color: #6b21a8;
+      margin-bottom: 50px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 16px 48px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      background: #c084fc;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(192,132,252,0.25);
+    }
+    .cta-btn:hover {
+      background: #a855f7;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(168,85,247,0.35);
+    }
+    .secondary-btn {
+      background: transparent;
+      border: 2px solid #c084fc;
+      color: #c084fc;
+    }
+    .secondary-btn:hover {
+      background: #c084fc;
+      color: white;
+    }
+
+    /* Features */
+    section.features {
+      padding: 120px 0;
+      background: #f9f9fc;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      color: #4b2e5a;
+      margin-bottom: 60px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 48px 32px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      transition: all 0.4s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 24px 60px rgba(192,132,252,0.18);
+    }
+    .card-icon {
+      font-size: 5rem;
+      margin-bottom: 28px;
+      color: #d19fe6;
+    }
+    .card h3 {
+      font-size: 2rem;
+      color: #4b2e5a;
+      margin-bottom: 20px;
+    }
+    .card p {
+      color: #555;
+      font-size: 1.15rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 80px 0 40px;
+      text-align: center;
+      color: #888;
+      background: #f9f9fc;
+      border-top: 1px solid #eee;
+    }
+    footer .accent {
+      color: #c084fc;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 3.5rem; }
+      .subtitle { font-size: 1.5rem; }
+      .nav-links { gap: 24px; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">공부하자 💕</a>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="https://codepen.io/Yammi1119/full/bNwboBE" target="_blank">Vocabulary</a>
+        <a href="https://codepen.io/Yammi1119/full/jEMNGVV" target="_blank">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>韓文學習，像談場韓國戀愛</h1>
+      <p class="subtitle">香港人專屬 App — AI靈魂伴侶陪你練韓文，24/7情感陪伴 + IoT沉浸體驗，讓你邊生活邊愛上韓文 💖🤖</p>
+      
+      <div class="cta-group">
+        <a href="#" class="cta-btn">立即下載 App</a>
+        <a href="#features" class="cta-btn secondary-btn">探索功能</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">為什麼選擇我們？</h2>
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon">💬❤️</div>
+          <h3>AI 靈魂伴侶</h3>
+          <p>像韓劇oppa或閨蜜一樣陪你聊天，記住你的喜好、情緒，自由輸出韓文，解決孤單與不敢開口的痛點</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐📱</div>
+          <h3>IoT 真實沉浸</h3>
+          <p>智能音箱每日韓文對話、QR掃描即聽發音、位置提醒附近韓食，學習融入日常生活</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📅✨</div>
+          <h3>每日挑戰 & 情感動力</h3>
+          <p>5分鐘碎片學習 + streak、療癒互動，讓你堅持下去不再半途而廢</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>讓學習韓文變成最甜的日常 • <span class="accent">공부하자</span> ♥ • 香港 K-learners • 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
